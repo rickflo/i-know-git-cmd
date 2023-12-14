@@ -1,0 +1,15 @@
+mkdir task3
+cd task3
+mkdir logs
+touch access.log
+vim access.log
+02.01.2021 05:33:50 localhost ssh: denied wrong password from 156.78.198.42
+ 02.01.2021 06:28:29 localhost ssh: successfully authenticated from 108.117.162.5
+ 02.01.2021 07:27:32 localhost ssh: successfully logged out from 254.199.78.117
+ 02.01.2021 11:24:56 localhost ssh: connection dropped by timeout from 227.65.89.157
+ 02.01.2021 11:59:29 localhost ssh: denied wrong password from 252.175.99.156
+ 02.01.2021 12:17:44 localhost ssh: connection dropped by timeout from 50.26.154.246
+ grep "denied wrong password" access.log | head -n 5 | sort -r -
+ echo 'grep "denied wrong password" access.log | head -n 5 | sort -r' > solutuion.txt
+ touch result.txt
+ vim result.txt
